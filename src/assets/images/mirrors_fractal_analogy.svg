@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%" fill="none">
+  <rect width="400" height="240" fill="#FAFAFA" class="dark:fill-[#161616]" rx="0"/>
+
+  <defs>
+    <pattern id="grid-mirrors" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E5E5E5" stroke-width="0.5" class="dark:stroke-[#252525]"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="240" fill="url(#grid-mirrors)" opacity="0.7"/>
+
+  <!-- Divider line -->
+  <line x1="200" y1="20" x2="200" y2="200" stroke="#E5E5E5" class="dark:stroke-[#262626]" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- LEFT PANEL: INFINITE MIRRORS TUNNEL -->
+  <g transform="translate(100, 110)">
+    <text x="0" y="-75" font-family="monospace" font-size="8.5" font-weight="bold" text-anchor="middle" fill="#171717" class="dark:fill-[#E5E5E5]">
+      ESPEJOS ENFRENTADOS
+    </text>
+
+    <!-- Outer frame (Mirror 1) -->
+    <rect x="-70" y="-60" width="140" height="130" fill="#FFFFFF" class="dark:fill-[#1E1E1E]" stroke="#171717" stroke-width="2" class="dark:stroke-[#E5E5E5]"/>
+    
+    <!-- Level 2 frame -->
+    <rect x="-52" y="-45" width="104" height="98" fill="#F5F5F5" class="dark:fill-[#242424]" stroke="#404040" stroke-width="1.5" class="dark:stroke-[#D4D4D4]"/>
+    
+    <!-- Level 3 frame -->
+    <rect x="-38" y="-33" width="76" height="72" fill="#E5E5E5" class="dark:fill-[#2A2A2A]" stroke="#737373" stroke-width="1.2" class="dark:stroke-[#A3A3A3]"/>
+    
+    <!-- Level 4 frame -->
+    <rect x="-26" y="-23" width="52" height="50" fill="#D4D4D4" class="dark:fill-[#333333]" stroke="#737373" stroke-width="1" class="dark:stroke-[#737373]"/>
+    
+    <!-- Level 5 frame (Vanishing point) -->
+    <rect x="-16" y="-14" width="32" height="30" fill="#A3A3A3" class="dark:fill-[#404040]" stroke="#171717" stroke-width="0.8" class="dark:stroke-[#FFFFFF]"/>
+    <rect x="-8" y="-7" width="16" height="15" fill="#171717" class="dark:fill-[#FFFFFF]"/>
+
+    <!-- Perspective convergence lines -->
+    <line x1="-70" y1="-60" x2="-8" y2="-7" stroke="#737373" stroke-width="0.75" stroke-dasharray="2 2"/>
+    <line x1="70" y1="-60" x2="8" y2="-7" stroke="#737373" stroke-width="0.75" stroke-dasharray="2 2"/>
+    <line x1="-70" y1="70" x2="-8" y2="8" stroke="#737373" stroke-width="0.75" stroke-dasharray="2 2"/>
+    <line x1="70" y1="70" x2="8" y2="8" stroke="#737373" stroke-width="0.75" stroke-dasharray="2 2"/>
+
+    <text x="0" y="85" font-family="sans-serif" font-size="7.5" text-anchor="middle" fill="#737373">
+      Túnel infinito de reflejos
+    </text>
+  </g>
+
+  <!-- RIGHT PANEL: FRACTAL AUTO-SIMILARITY (TREE & FERN) -->
+  <g transform="translate(300, 110)">
+    <text x="0" y="-75" font-family="monospace" font-size="8.5" font-weight="bold" text-anchor="middle" fill="#171717" class="dark:fill-[#E5E5E5]">
+      AUTOSEMEJANZA NATURAL
+    </text>
+
+    <!-- Fractal Tree Trunk and Branches -->
+    <!-- Base trunk -->
+    <line x1="0" y1="70" x2="0" y2="25" stroke="#171717" class="dark:stroke-[#E5E5E5]" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Level 1 branches -->
+    <line x1="0" y1="25" x2="-28" y2="-5" stroke="#171717" class="dark:stroke-[#E5E5E5]" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="0" y1="25" x2="28" y2="-5" stroke="#171717" class="dark:stroke-[#E5E5E5]" stroke-width="2.2" stroke-linecap="round"/>
+    
+    <!-- Level 2 branches (Left branch splits) -->
+    <line x1="-28" y1="-5" x2="-48" y2="-25" stroke="#171717" class="dark:stroke-[#E5E5E5]" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="-28" y1="-5" x2="-22" y2="-32" stroke="#171717" class="dark:stroke-[#E5E5E5]" stroke-width="1.6" stroke-linecap="round"/>
+    
+    <!-- Level 2 branches (Right branch splits) -->
+    <line x1="28" y1="-5" x2="22" y2="-32" stroke="#171717" class="dark:stroke-[#E5E5E5]" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="28" y1="-5" x2="48" y2="-25" stroke="#171717" class="dark:stroke-[#E5E5E5]" stroke-width="1.6" stroke-linecap="round"/>
+    
+    <!-- Level 3 twigs (Smallest) -->
+    <line x1="-48" y1="-25" x2="-60" y2="-40" stroke="#737373" stroke-width="1.1" stroke-linecap="round"/>
+    <line x1="-48" y1="-25" x2="-44" y2="-43" stroke="#737373" stroke-width="1.1" stroke-linecap="round"/>
+    <line x1="-22" y1="-32" x2="-30" y2="-48" stroke="#737373" stroke-width="1.1" stroke-linecap="round"/>
+    <line x1="-22" y1="-32" x2="-14" y2="-48" stroke="#737373" stroke-width="1.1" stroke-linecap="round"/>
+
+    <line x1="22" y1="-32" x2="14" y2="-48" stroke="#737373" stroke-width="1.1" stroke-linecap="round"/>
+    <line x1="22" y1="-32" x2="30" y2="-48" stroke="#737373" stroke-width="1.1" stroke-linecap="round"/>
+    <line x1="48" y1="-25" x2="44" y2="-43" stroke="#737373" stroke-width="1.1" stroke-linecap="round"/>
+    <line x1="48" y1="-25" x2="60" y2="-40" stroke="#737373" stroke-width="1.1" stroke-linecap="round"/>
+
+    <!-- Small leaf buds on tips -->
+    <circle cx="-60" cy="-40" r="1.5" fill="#171717" class="dark:fill-[#FFFFFF]"/>
+    <circle cx="-44" cy="-43" r="1.5" fill="#171717" class="dark:fill-[#FFFFFF]"/>
+    <circle cx="-30" cy="-48" r="1.5" fill="#171717" class="dark:fill-[#FFFFFF]"/>
+    <circle cx="-14" cy="-48" r="1.5" fill="#171717" class="dark:fill-[#FFFFFF]"/>
+    <circle cx="14" cy="-48" r="1.5" fill="#171717" class="dark:fill-[#FFFFFF]"/>
+    <circle cx="30" cy="-48" r="1.5" fill="#171717" class="dark:fill-[#FFFFFF]"/>
+    <circle cx="44" cy="-43" r="1.5" fill="#171717" class="dark:fill-[#FFFFFF]"/>
+    <circle cx="60" cy="-40" r="1.5" fill="#171717" class="dark:fill-[#FFFFFF]"/>
+
+    <!-- Label badge -->
+    <text x="0" y="85" font-family="sans-serif" font-size="7.5" text-anchor="middle" fill="#737373">
+      Cada rama replica la forma del árbol
+    </text>
+  </g>
+
+  <!-- Bottom Annotation Box -->
+  <rect x="30" y="210" width="340" height="20" fill="#FFFFFF" class="dark:fill-[#1E1E1E]" stroke="#E5E5E5" class="dark:stroke-[#2E2E2E]" stroke-width="1"/>
+  <text x="200" y="223" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#525252" class="dark:fill-[#A3A3A3]">
+    Una parte pequeña contiene la geometría idéntica de la totalidad del objeto.
+  </text>
+</svg>

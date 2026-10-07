@@ -1,0 +1,8 @@
+{
+  "name": "Tratado sobre Recursividad Computacional",
+  "description": "Monografía académica interactiva sobre fundamentos teóricos de la recursividad, control de pila, análisis de complejidad Big-O y simuladores funcionales.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

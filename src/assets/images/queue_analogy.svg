@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%" fill="none">
+  <rect width="400" height="240" fill="#FAFAFA" class="dark:fill-[#161616]" rx="0"/>
+
+  <defs>
+    <pattern id="grid-queue" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E5E5E5" stroke-width="0.5" class="dark:stroke-[#252525]"/>
+    </pattern>
+    <marker id="arrow-fwd" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#171717" class="dark:fill-[#E5E5E5]"/>
+    </marker>
+    <marker id="arrow-back" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#737373" class="dark:fill-[#A3A3A3]"/>
+    </marker>
+  </defs>
+  <rect width="400" height="240" fill="url(#grid-queue)" opacity="0.7"/>
+
+  <!-- Counter / Taquilla on the left (front of queue) -->
+  <g transform="translate(45, 120)">
+    <rect x="-25" y="-60" width="30" height="130" fill="#FFFFFF" class="dark:fill-[#202020]" stroke="#171717" stroke-width="1.5" class="dark:stroke-[#E5E5E5]"/>
+    <line x1="-25" y1="-30" x2="5" y2="-30" stroke="#737373" stroke-width="1"/>
+    <text x="-10" y="-42" font-family="monospace" font-size="7.5" font-weight="bold" text-anchor="middle" fill="#171717" class="dark:fill-[#E5E5E5]">INICIO</text>
+    <line x1="-25" y1="20" x2="5" y2="20" stroke="#737373" stroke-width="1"/>
+    <text x="-10" y="5" font-family="sans-serif" font-size="7" text-anchor="middle" fill="#737373">Taquilla</text>
+  </g>
+
+  <!-- Ground line -->
+  <line x1="20" y1="190" x2="380" y2="190" stroke="#737373" stroke-width="1" stroke-dasharray="2 2"/>
+
+  <!-- PERSON 1: First in line (Base Case) -->
+  <g transform="translate(100, 140)">
+    <!-- Body -->
+    <circle cx="0" cy="-40" r="11" fill="#FFFFFF" class="dark:fill-[#222222]" stroke="#171717" stroke-width="1.5" class="dark:stroke-[#FFFFFF]"/>
+    <path d="M-12,-15 C-12,-28 12,-28 12,-15 L10,35 L-10,35 Z" fill="#171717" class="dark:fill-[#FFFFFF]" stroke="#171717" stroke-width="1.5" class="dark:stroke-[#FFFFFF]"/>
+    <!-- Speech bubble -->
+    <rect x="-35" y="-75" width="70" height="20" rx="3" fill="#171717" class="dark:fill-[#FFFFFF]"/>
+    <text x="0" y="-62" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#FFFFFF" class="dark:fill-[#171717]">«Soy el 1»</text>
+    <polygon points="-5,-55 5,-55 0,-49" fill="#171717" class="dark:fill-[#FFFFFF]"/>
+    <text x="0" y="47" font-family="monospace" font-size="8.5" font-weight="bold" text-anchor="middle" fill="#171717" class="dark:fill-[#E5E5E5]">Caso Base</text>
+  </g>
+
+  <!-- PERSON 2 -->
+  <g transform="translate(180, 140)">
+    <circle cx="0" cy="-40" r="11" fill="#FFFFFF" class="dark:fill-[#222222]" stroke="#171717" stroke-width="1.5" class="dark:stroke-[#E5E5E5]"/>
+    <path d="M-12,-15 C-12,-28 12,-28 12,-15 L10,35 L-10,35 Z" fill="#FFFFFF" class="dark:fill-[#202020]" stroke="#171717" stroke-width="1.5" class="dark:stroke-[#E5E5E5]"/>
+    <text x="0" y="47" font-family="monospace" font-size="8" text-anchor="middle" fill="#737373">«Soy 1+1=2»</text>
+  </g>
+
+  <!-- PERSON 3 -->
+  <g transform="translate(260, 140)">
+    <circle cx="0" cy="-40" r="11" fill="#FFFFFF" class="dark:fill-[#222222]" stroke="#171717" stroke-width="1.5" class="dark:stroke-[#E5E5E5]"/>
+    <path d="M-12,-15 C-12,-28 12,-28 12,-15 L10,35 L-10,35 Z" fill="#FFFFFF" class="dark:fill-[#202020]" stroke="#171717" stroke-width="1.5" class="dark:stroke-[#E5E5E5]"/>
+    <text x="0" y="47" font-family="monospace" font-size="8" text-anchor="middle" fill="#737373">«Soy 2+1=3»</text>
+  </g>
+
+  <!-- PERSON 4: You (at the end) -->
+  <g transform="translate(340, 140)">
+    <circle cx="0" cy="-40" r="11" fill="#FFFFFF" class="dark:fill-[#222222]" stroke="#171717" stroke-width="1.75" class="dark:stroke-[#E5E5E5]"/>
+    <path d="M-12,-15 C-12,-28 12,-28 12,-15 L10,35 L-10,35 Z" fill="#E5E5E5" class="dark:fill-[#2E2E2E]" stroke="#171717" stroke-width="1.75" class="dark:stroke-[#E5E5E5]"/>
+    <!-- Speech bubble -->
+    <rect x="-35" y="-75" width="70" height="20" rx="3" fill="#FFFFFF" class="dark:fill-[#262626]" stroke="#171717" stroke-width="1.2" class="dark:stroke-[#E5E5E5]"/>
+    <text x="0" y="-62" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#171717" class="dark:fill-[#E5E5E5]">«¿Mi lugar?»</text>
+    <polygon points="-5,-55 5,-55 0,-49" fill="#FFFFFF" class="dark:fill-[#262626]"/>
+    <text x="0" y="47" font-family="monospace" font-size="8.5" font-weight="bold" text-anchor="middle" fill="#171717" class="dark:fill-[#E5E5E5]">Tú: Lugar 4</text>
+  </g>
+
+  <!-- FORWARD ARROWS (Calls: "¿Qué número eres?") -->
+  <g stroke="#171717" class="dark:stroke-[#E5E5E5]" stroke-width="1.3" fill="none">
+    <path d="M320,80 Q295,65 275,80" marker-end="url(#arrow-fwd)"/>
+    <path d="M240,80 Q215,65 195,80" marker-end="url(#arrow-fwd)"/>
+    <path d="M160,80 Q135,65 115,80" marker-end="url(#arrow-fwd)"/>
+  </g>
+  <text x="215" y="58" font-family="monospace" font-size="8" font-weight="bold" text-anchor="middle" fill="#171717" class="dark:fill-[#E5E5E5]">
+    FASE 1: PREGUNTAR HACIA ADELANTE (LLAMADAS) →
+  </text>
+
+  <!-- BACKWARD ARROWS (Returns: Respuestas sumando 1) -->
+  <g stroke="#737373" class="dark:stroke-[#A3A3A3]" stroke-width="1.3" stroke-dasharray="3 2" fill="none">
+    <path d="M120,115 Q145,130 165,115" marker-end="url(#arrow-back)"/>
+    <path d="M200,115 Q225,130 245,115" marker-end="url(#arrow-back)"/>
+    <path d="M280,115 Q305,130 325,115" marker-end="url(#arrow-back)"/>
+  </g>
+  <text x="215" y="132" font-family="monospace" font-size="8" text-anchor="middle" fill="#737373">
+    ← FASE 2: SUMAR 1 DE REGRESO (RETORNOS DE PILA)
+  </text>
+
+  <!-- Bottom Annotation Box -->
+  <rect x="30" y="210" width="340" height="20" fill="#FFFFFF" class="dark:fill-[#1E1E1E]" stroke="#E5E5E5" class="dark:stroke-[#2E2E2E]" stroke-width="1"/>
+  <text x="200" y="223" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#525252" class="dark:fill-[#A3A3A3]">
+    No cuentas toda la fila: delegas al de adelante y esperas que la respuesta vuelva sumada.
+  </text>
+</svg>
